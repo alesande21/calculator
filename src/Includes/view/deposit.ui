@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Deposit</class>
+ <widget class="QWidget" name="Deposit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1233</width>
+    <height>545</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QGroupBox" name="gb_cap_of_interest">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>330</y>
+     <width>211</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>cap of interest</string>
+   </property>
+   <widget class="QRadioButton" name="rb_cap">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>cap</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rb_no_cap">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>60</y>
+      <width>99</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>without cap</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>110</y>
+     <width>731</width>
+     <height>381</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>151</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="l_amount">
+      <property name="text">
+       <string>deposit amount</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="l_period">
+      <property name="text">
+       <string>deposit period</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="l_interest_rate">
+      <property name="text">
+       <string>interest rate</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="l_tax_rate">
+      <property name="text">
+       <string>tax rate</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="l_payment_frequency">
+      <property name="text">
+       <string>payment frequency</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>60</y>
+     <width>183</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLineEdit" name="le_deposit_amount"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_period"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_interest_rate"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_tax_rate"/>
+    </item>
+    <item>
+     <widget class="QComboBox" name="cb_payment_frequency">
+      <item>
+       <property name="text">
+        <string>day</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>week</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>month</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>quarter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>half of year</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>year</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>at the end of the term</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="calculate">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>440</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calc</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>520</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cb_deposit_period">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>120</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>day</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>month</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>year</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="text_total_income">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>20</y>
+     <width>149</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Total interest income</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="text_tax_payment">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>20</y>
+     <width>149</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Total tax payment</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="text_total_amount">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>20</y>
+     <width>149</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Total deposit amount</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_total_income">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>60</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_total_tax_payment">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>60</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="l_total_amount">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>60</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
